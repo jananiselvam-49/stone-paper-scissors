@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(135deg, #0b0f1a, #1e2a44, #4a2a1a, #6b3a1e);
+}
+
+.game-title {
+  font-weight: 800;
+  font-size: 70px;
+  text-align: center;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.stone {
+  background: linear-gradient(to bottom, #6ec1ff 20%, #0072ca 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 15px;
+}
+
+.paper {
+  background: linear-gradient(to bottom, #ededed 20%, #8e8c8c 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 15px;
+}
+
+.scissors {
+  background: linear-gradient(to bottom, #f16204 20%, #f68a43 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 15px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(158, 157, 157);
+  ;
+}
+
+.container {
+  height: 490px;
+  width: 65%;
+  margin: 23px auto;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding-top: 30px;
+  border-radius: 16px;
+  color: aliceblue;
+  padding: 10px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.container11 img,
+.container13 img {
+  height: 150px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: #6b3a1e 0px 50px 100px -20px, 0px 30px 60px -30px#6b3a1e, #0b0f1a 0px -2px 6px 0px inset;
+  margin-top: 2px;
+}
+
+.container12 img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  box-shadow: #6b3a1e 0px 50px 100px -20px, 0px 30px 60px -30px#6b3a1e, #0b0f1a 0px -2px 6px 0px inset;
+  margin-top: 8px;
+}
+
+.container11 p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 3px;
+}
+
+.container13 p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 3px;
+}
+
+.container12 h1 {
+  background: linear-gradient(to bottom, rgb(154, 234, 154)20%, rgb(4, 240, 4)80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container hr {
+  border: none;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container2 img {
+  width: 250px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: #6b3a1e 0px 50px 100px -20px, 0px 30px 60px -30px #5875c5, #6d88d4 0px -2px 6px 0px inset;
+}
+
+.container2 img:hover {
+  transform: translateY(-8px);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#h11 {
+  background: linear-gradient(to bottom, #6ec1ff 20%, #0072ca 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#h12 {
+  background: linear-gradient(to bottom, #ededed 20%, #8e8c8c 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#h13 {
+  background: linear-gradient(to bottom, #f16204 20%, #f68a43 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 6px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  padding: 10px;
+  width: 120px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgb(140, 3, 3)20%, rgb(249, 3, 3)80%);
+  color: white;
+  border: none;
+  font-size: larger;
+}
+
+.btn button:hover {
+  background: linear-gradient(135deg, rgb(249, 159, 159));
+  cursor: pointer;
+}
+
+@media screen and  (max-width:1280px){
+  .container{
+    width: 90%;
+    box-sizing: border-box;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .container1, .container2{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:600px) {
+  
+  body{
+    min-height: 100vh;
+  }
+
+  .game-title {
+    font-weight: 500;
+    font-size: 30px;
+    width: 90%;
+  }
+  .stone, .paper, .scissors{
+    padding-right: 0;
+  }
+  .table {
+    font-size: 10px;
+  }
+  .container{
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    min-height: 80%;
+    padding-top: 0;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    
+  }
+  .container11 img, .container13 img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .container12 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 40px;
+  }
+  .container11 p, .container12 p, .container13 p{
+    font-size: 12px;
+  }
+  .container12 h1{
+    font-size: 15px;
+  }
+  .container2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container2 img{
+    width: 150px;
+    height: auto;
+    max-height: 150px;
+    margin-bottom: 5px;
+  }
+  .container3{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container3 h2{
+    font-size: 18px;
+  }
+  .btn button{
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 10px;
+  }
+}
