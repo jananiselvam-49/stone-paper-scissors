@@ -13,4 +13,4 @@ A simple Rock Paper Scissors game built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Live Demo
-(coming soon)
+ https://jananiselvam-49.github.io/stone-paper-scissors/
